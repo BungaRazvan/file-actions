@@ -26,4 +26,3 @@ if __name__ == '__main__':
         for song in f1_songs:
             if song not in f2_songs:
                 print(song)
-                print(song)
