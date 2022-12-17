@@ -24,6 +24,4 @@ if __name__ == '__main__':
             previous_songs = previous_data[list(new_read_data.keys())[0]]
             os.remove(f'{download_dir_path}/{file_to_read}')
 
-        for song in previous_songs:
-            if song not in new_songs:
-                print(song)
+        print([s for s in previous_songs if not any(x in s for x in new_songs)])
